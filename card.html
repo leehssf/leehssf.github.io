@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartão de visita</title>
+<link rel="icon" href="favicon_io.zip" type="image/x-icon">
+<style>
+  body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #73d7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adicionado para não colar nos cantos */
+  }
+
+  .card {
+    background: #e2beff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Adicionado para limitar no desktop */
+    text-align: center;
+    margin: auto; /* Centralização no mobile */
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px; /* Arredondar as bordas da imagem */
+    border-top-right-radius: 8px;
+  }
+
+  .card h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 22px;
+    color: #333;
+  }
+
+  .card p {
+    padding: 0 20px 20px;
+    margin: 0;
+    color: #444;
+  }
+
+  /* Media query para telas maiores (desktop) */
+  @media (min-width: 768px) {
+    body {
+      height: auto;
+    }
+    .card {
+      transition: transform 0.3s ease; /* Efeito legalzinho ao pairar */
+    }
+    .card:hover {
+      transform: translateY(-10px); /* Levanta o card quando passa o mouse */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="IMG_20221006_162736_519.jpg" alt="Foto de Leeh">
+  <h1>Letícia Souza</h1>
+  <p>Oie! Prazer, eu sou a Leeh.</p>
+</div>
+
+</body>
+</html>
