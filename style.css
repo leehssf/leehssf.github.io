@@ -58,15 +58,3 @@ footer {
  bottom: 0;
  width: 100%;
 }
-summary {
-    all: unset;
-    padding: 16px;
-    color: rgb(255 255 255 / .6);
-    background: rgb(16 28 34);
-    width: 100%;
-    cursor: pointer;
-}
-details {
-    background-color: rgb(12 12 14);
-    color: white;
-}
